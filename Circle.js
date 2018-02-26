@@ -17,8 +17,6 @@ const CIRCLE = Math.PI * 2;
 const AnimatedSurface = Animated.createAnimatedComponent(ART.Surface);
 const AnimatedArc = Animated.createAnimatedComponent(Arc);
 
-const RNViewPropTypes = ViewPropTypes || View.propTypes;
-
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'transparent',
@@ -43,7 +41,7 @@ export class ProgressCircle extends Component {
     rotation: PropTypes.instanceOf(Animated.Value),
     showsText: PropTypes.bool,
     size: PropTypes.number,
-    style: RNViewPropTypes.style,
+    style: ViewPropTypes.style,
     strokeCap: PropTypes.oneOf(['butt', 'square', 'round']),
     textStyle: Text.propTypes.style,
     thickness: PropTypes.number,
