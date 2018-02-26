@@ -15,8 +15,6 @@ const AnimatedArc = Animated.createAnimatedComponent(Arc);
 const MIN_ARC_ANGLE = 0.1;
 const MAX_ARC_ANGLE = 1.5 * Math.PI;
 
-const RNViewPropTypes = ViewPropTypes || View.propTypes;
-
 export default class CircleSnail extends Component {
   static propTypes = {
     animating: PropTypes.bool,
@@ -30,7 +28,7 @@ export default class CircleSnail extends Component {
     hidesWhenStopped: PropTypes.bool,
     size: PropTypes.number,
     spinDuration: PropTypes.number,
-    style: RNViewPropTypes.style,
+    style: ViewPropTypes.style,
     thickness: PropTypes.number,
     strokeCap: PropTypes.string,
   };
